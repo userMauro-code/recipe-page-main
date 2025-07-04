@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-size: 16px;
-    font-family: "Young serif";
+    font-family: "Young serif", "Outfit";
     color: hsl(30, 10%, 34%);
 }
 
@@ -50,13 +50,13 @@ body {
 }
 
 .receta .receta--description {
-    font-size: .8em;
-    font-weight: 300;
+    font-family: "Outfit";
+    color: hsl(30, 10%, 34%);
     margin-top: 1em;
 }
 
 .preparation {
-    background: hsl(332, 51%, 32%, 0.2);
+    background: hsl(332, 51%, 32%, 0.1);
     border-radius: .5em;
     padding: 1em;
 }
@@ -66,40 +66,113 @@ body {
    
 }
 
+.preparation ul {
+    padding-left: 1.5em;
+}
+
+.preparation .list--span--resultado {
+    font-size: .9em;
+}
+
+.preparation li {
+    list-style-type: disc;
+    color: hsl(332, 51%, 32%);
+    padding: .7em;
+}
+
 .list--span{
     color: hsl(30, 10%, 34%);
     font-weight: 900;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.box{
-    height: 100px;
-    width: 100px;    
+.preparation ul .preparation--duration {
+    font-family: "Outfit";
 }
 
-.box1{background: hsl(0, 0%, 100%);}
-.box2{background: hsl(30, 54%, 90%)}
-.box3{background:  hsl(30, 18%, 87%);}
-.box4{background: hsl(30, 10%, 34%)};
-.box5{background: hsl(24, 5%, 18%);}
-.box6{background: hsl(14, 45%, 36%);}
-.box7{background: hsl(332, 51%, 32%);}
-.box8{background: hsl(330, 100%, 98%);}
+.conteiner--ingredients {
+    border-bottom: 1px solid hsl(30, 10%, 34%, .4);
+}
+
+.conteiner--ingredients h2 {
+    margin-top: 1em;
+    color: hsl(14, 45%, 36%);
+}
+
+.conteiner--intructions .intruction {
+    font-family: "Outfit";
+}
+
+.conteiner--ingredients .list__ingredients {
+    font-family: "Outfit";
+}
+
+.conteiner--ingredients ul{
+    margin-left: .5em;
+}
+
+.conteiner--ingredients li {
+    margin: 1em .8em;
+    padding-left: 1em;
+}
+
+.conteiner--intructions {
+    border-bottom: 1px solid hsl(30, 10%, 34%, .4);
+}
+
+.conteiner--intructions h2 {
+    margin-top: 1em;
+    color: hsl(14, 45%, 36%);
+}
+
+.conteiner--intructions ol {
+    margin-left: 1em;
+}
+
+.conteiner--intructions li {
+    margin: 1em .8em;
+    padding-left: 1em;
+}
+
+.nutrition{
+    margin-top: 1em;
+}
+
+.nutrition .nutrition__title {
+    margin-bottom: 1em;
+    color: hsl(14, 45%, 36%);
+}
+
+.nutrition .nutrition__description {
+    font-size: .8em;
+}
+
+.nutrition .nutrition__table {
+    width: 100%;
+    margin-top: 1em;
+}
+
+.nutrition__table .tr {
+    width: 100%;
+    line-height: 1em;
+    border-bottom: 1px solid hsl(30, 10%, 34%, .4);
+    padding-bottom: 1em;
+    display: flex;
+}
+
+.nutrition__table tbody tr{
+    margin: 1em 0;
+    display: block;
+}
+
+.tr th,td{
+    width: 50%;
+}
+
+.tr th {
+    text-align: start;
+    font-weight: 100;
+}
+
+.tr td {
+    color: hsl(14, 45%, 36%);
+}
