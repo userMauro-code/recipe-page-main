@@ -115,6 +115,10 @@ body {
     padding-left: 1em;
 }
 
+.conteiner--ingredients li::marker {
+    color: hsl(14, 45%, 36%);
+}
+
 .conteiner--intructions {
     border-bottom: 1px solid hsl(30, 10%, 34%, .4);
 }
@@ -128,9 +132,19 @@ body {
     margin-left: 1em;
 }
 
+.conteiner--intructions .preIntruction {
+    font-weight: bolder;
+    font-family: "Outfit";
+}
+
 .conteiner--intructions li {
     margin: 1em .8em;
     padding-left: 1em;
+}
+
+
+.conteiner--intructions li::marker {
+    color: hsl(14, 45%, 36%);
 }
 
 .nutrition{
@@ -143,7 +157,7 @@ body {
 }
 
 .nutrition .nutrition__description {
-    font-size: .8em;
+    font-family: "Outfit";
 }
 
 .nutrition .nutrition__table {
@@ -153,7 +167,7 @@ body {
 
 .nutrition__table .tr {
     width: 100%;
-    line-height: 1em;
+    line-height: 1.5;
     border-bottom: 1px solid hsl(30, 10%, 34%, .4);
     padding-bottom: 1em;
     display: flex;
@@ -161,7 +175,6 @@ body {
 
 .nutrition__table tbody tr{
     margin: 1em 0;
-    display: block;
 }
 
 .tr th,td{
